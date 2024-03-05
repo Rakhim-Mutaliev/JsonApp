@@ -27,7 +27,6 @@ struct ContentView: View {
                         VStack {
                             Text("DevValue:")
                                 .fontWeight(.semibold)
-                            //не сохраняет с этим кодом
                             //                                TextField("\(user.devValue)", text: Binding(
                             //                                    get: { user.devValue },
                             //                                    set: { value in
@@ -38,7 +37,7 @@ struct ContentView: View {
                             //                                ))
                             TextField(devValue, text: $devValue)
                                 .lineLimit(nil)
-                                .font(Font.system(size: 16, weight: .bold, design: .serif))
+                                .font(Font.system(size: 16, weight: .bold, design: .monospaced))
                         }
                         VStack {
                             Text("ProdValue:")
