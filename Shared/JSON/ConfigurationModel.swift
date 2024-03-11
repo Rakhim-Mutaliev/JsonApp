@@ -1,5 +1,5 @@
 //
-//  UserModel.swift
+//  ConfigurationModel.swift
 //  JsonApp (iOS)
 //
 //  Created by Rakhim  on 28.02.2024.
@@ -8,14 +8,14 @@
 import Foundation
 import SwiftUI
 
-struct UserModel: Codable {
+struct ConfigurationModel: Codable {
     var key: String
     var devValue: String
     var prodValue: String?
     var tags: String?
 }
 
-extension UserModel {
+extension ConfigurationModel {
     private enum CodingKeys: String, CodingKey { case key, prodValue, tags }
     
     init(from decoder: Decoder) throws {

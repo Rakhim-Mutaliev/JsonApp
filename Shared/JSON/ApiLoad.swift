@@ -8,13 +8,13 @@
 import Foundation
 import SwiftUI
 
-func loadUser() -> [UserModel] {
+func loadConfiguration() -> [ConfigurationModel] {
     if let path = Bundle.main.path(forResource: "converted_data", ofType: "json") {
         do {
             let data = try Data(contentsOf: URL(fileURLWithPath: path))
             let decoder = JSONDecoder()
             decoder.keyDecodingStrategy = .convertFromSnakeCase
-            let items = try decoder.decode([UserModel].self, from: data)
+            let items = try decoder.decode([ConfigurationModel].self, from: data)
             return items
         } catch {
             fatalError("Ошибка - \(path)")

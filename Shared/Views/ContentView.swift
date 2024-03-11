@@ -9,18 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var items: [UserModel] = loadUser()
+    @State private var items: [ConfigurationModel] = loadConfiguration()
     @AppStorage("devValue") var devValue: String = ""
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(items, id: \.key) { user in
+                ForEach(items, id: \.key) { item in
                     VStack(spacing: 5.0) {
                         VStack {
                             Text("Ключ:")
                                 .fontWeight(.semibold)
-                            Text("\(user.key)")
+                            Text("\(item.key)")
                                 .lineLimit(nil)
                                 .font(Font.system(size: 16, weight: .bold, design: .serif))
                         }
@@ -42,14 +42,14 @@ struct ContentView: View {
                         VStack {
                             Text("ProdValue:")
                                 .fontWeight(.semibold)
-                            Text("\(user.prodValue ?? "")")
+                            Text("\(item.prodValue ?? "")")
                                 .lineLimit(nil)
                                 .font(Font.system(size: 16, weight: .bold, design: .serif))
                         }
                         VStack {
                             Text("Теги:")
                                 .fontWeight(.semibold)
-                            Text("\(user.tags ?? "")")
+                            Text("\(item.tags ?? "")")
                                 .lineLimit(nil)
                                 .font(Font.system(size: 16, weight: .bold, design: .serif))
                         }

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		422623092B8FADEC00604F63 /* ApiLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422623082B8FADEC00604F63 /* ApiLoad.swift */; };
 		4226230B2B8FAF6900604F63 /* converted_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 4226230A2B8FAF6900604F63 /* converted_data.json */; };
-		4226230D2B8FAF8300604F63 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4226230C2B8FAF8300604F63 /* UserModel.swift */; };
+		4226230D2B8FAF8300604F63 /* ConfigurationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4226230C2B8FAF8300604F63 /* ConfigurationModel.swift */; };
 		422F31582B435B1E0027143D /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422F31572B435B1E0027143D /* Tests_iOS.swift */; };
 		422F315A2B435B1E0027143D /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422F31592B435B1E0027143D /* Tests_iOSLaunchTests.swift */; };
 		422F31642B435B1E0027143D /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422F31632B435B1E0027143D /* Tests_macOS.swift */; };
@@ -42,7 +42,7 @@
 /* Begin PBXFileReference section */
 		422623082B8FADEC00604F63 /* ApiLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLoad.swift; sourceTree = "<group>"; };
 		4226230A2B8FAF6900604F63 /* converted_data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = converted_data.json; sourceTree = "<group>"; };
-		4226230C2B8FAF8300604F63 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		4226230C2B8FAF8300604F63 /* ConfigurationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationModel.swift; sourceTree = "<group>"; };
 		422F313F2B435B1A0027143D /* JsonAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonAppApp.swift; sourceTree = "<group>"; };
 		422F31402B435B1A0027143D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		422F31412B435B1E0027143D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				422623082B8FADEC00604F63 /* ApiLoad.swift */,
-				4226230C2B8FAF8300604F63 /* UserModel.swift */,
+				4226230C2B8FAF8300604F63 /* ConfigurationModel.swift */,
 				4226230A2B8FAF6900604F63 /* converted_data.json */,
 			);
 			path = JSON;
@@ -335,7 +335,7 @@
 			files = (
 				422F31692B435B1E0027143D /* ContentView.swift in Sources */,
 				422F31672B435B1E0027143D /* JsonAppApp.swift in Sources */,
-				4226230D2B8FAF8300604F63 /* UserModel.swift in Sources */,
+				4226230D2B8FAF8300604F63 /* ConfigurationModel.swift in Sources */,
 				422623092B8FADEC00604F63 /* ApiLoad.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
